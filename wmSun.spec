@@ -42,7 +42,6 @@ install %{name}/%{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -50,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BUGS TODO
 %attr(755,root,root) %{_bindir}/%{name}
-%{_mandir}/man1/%{name}.1.gz
+%{_mandir}/man1/%{name}.1*
 #%{_applnkdir}/DockApplets/wmSun.desktop
