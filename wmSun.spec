@@ -42,7 +42,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}/%{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf BUGS TODO
 
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
-%{_applnkdir}/DockApplets/wmSun.desktop
+#%{_applnkdir}/DockApplets/wmSun.desktop
