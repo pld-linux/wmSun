@@ -50,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc BUGS TODO
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
-#%{_applnkdir}/DockApplets/wmSun.desktop
+#%%{_applnkdir}/DockApplets/wmSun.desktop
