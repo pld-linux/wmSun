@@ -2,7 +2,7 @@ Summary:	wmSun displays the current day's Sun Rise and Set Times
 Summary(pl):	wmSun wy¶wietla aktualny czas wschodu i zachodu S³oñca
 Name:		wmSun
 Version:	1.03
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {BUGS,TODO}.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
 %{_applnkdir}/DockApplets/wmSun.desktop
