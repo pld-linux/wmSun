@@ -27,7 +27,7 @@ miejsca, w którym przebywamy.
 %build
 %{__make} -C %{name} clean
 %{__make} -C %{name} \
-        CFLAGS="%{rpmcflags} -Wall" \
+	CFLAGS="%{rpmcflags} -Wall" \
 	LIBDIR="-L/usr/X11R6/%{_lib}"
 
 %install
