@@ -42,15 +42,15 @@ install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/wmconfig/wmSun
 gzip -9nf $RPM_BUILD_ROOT/usr/X11R6/share/man/man1/* \
 	BUGS TODO
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %files
 %defattr(644,root,root,755)
 %doc {BUGS,TODO}.gz
 %attr(755,root,root) /usr/X11R6/bin/wmSun
 /usr/X11R6/share/man/man1/wmSun.1.gz
 /etc/X11/wmconfig/wmSun
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun May 16 1999 Piotr Czerwiñski <pius@pld.org.pl>
