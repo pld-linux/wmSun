@@ -36,12 +36,12 @@ make -C %{name} \
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
-        $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
+        $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
 
 install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}/%{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
 	BUGS TODO
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc {BUGS,TODO}.gz
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
-/etc/X11/applnk/DockApplets/wmSun.desktop
+/usr/X11R6/share/applnk/DockApplets/wmSun.desktop
