@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=wmSun
 Comment=Sun Rise and Set Times
-Comment[pl]=Czasy Wschodu i Zachodu Słońca 
+Comment[pl]=Czasy wschodu i zachodu Słońca 
 Exec=wmSun
 Terminal=0
 Type=Application
