@@ -2,12 +2,12 @@ Summary:	wmSun displays the current day's Sun Rise and Set Times
 Summary(pl):	wmSun wy¶wietla aktualny czas wschodu i zachodu s³oñca
 Name:		wmSun
 Version:	1.03
-Release:	2
+Release:	3
 Copyright:	GPL
 Group:          X11/Window Managers/Tools
 Group(pl):      X11/Zarz±dcy Okien/Narzêdzia
 Source0: 	ftp://leadbelly.lanl.gov/pub/mgh/%{name}-%{version}.tar.gz
-Source1:	wmSun.wmconfig
+Source1:	wmSun.desktop
 BuildPrereq:    XFree86-devel
 BuildPrereq:    xpm-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -36,12 +36,12 @@ make -C %{name} \
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
-        $RPM_BUILD_ROOT/etc/X11/wmconfig
+        $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
 
 install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}/%{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/wmconfig/%{name}
+install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/DockApplets
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
 	BUGS TODO
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc {BUGS,TODO}.gz
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
-/etc/X11/wmconfig/%{name}
+/etc/X11/applnk/DockApplets/wmSun.desktop
 
 %changelog
 * Sun May 16 1999 Piotr Czerwiñski <pius@pld.org.pl>
