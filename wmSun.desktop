@@ -6,4 +6,6 @@ Exec=wmSun
 Terminal=false
 Type=Application
 Encoding=UTF-8
+NotShowIn=GNOME;KDE;
+Categories=X-Docklet;Calendar;
 # vi: encoding=utf-8
