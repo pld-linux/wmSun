@@ -55,12 +55,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
 /etc/X11/applnk/DockApplets/wmSun.desktop
-
-%changelog
-* Sun May 16 1999 Piotr Czerwiñski <pius@pld.org.pl>
-  [1.03-2]
-- modified spec file for PLD use,
-- package is now FHS 2.0 compliant.	
-
-* Tue Feb 9 1998 Ian Macdonald <ianmacd@xs4all.nl>
-- first RPM release.
