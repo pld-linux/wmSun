@@ -12,7 +12,7 @@ BuildPrereq:    XFree86-devel
 BuildPrereq:    xpm-devel
 BuildRoot:      /tmp/%{name}-%{version}-root
 
-%define _prefix         /usr/X11R6
+%define _prefix	/usr/X11R6
 
 %description
 wmSun displays the current day's Sun Rise and Set Times.
