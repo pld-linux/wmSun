@@ -12,8 +12,6 @@ URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
-%define 	_mandir 	%{_prefix}/man
 
 %description
 wmSun displays the current day's Sun Rise and Set Times. You must
