@@ -10,11 +10,10 @@ Source0: 	ftp://leadbelly.lanl.gov/pub/mgh/%{name}-%{version}.tar.gz
 Source1:	wmSun.desktop
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
 %define 	_mandir 	%{_prefix}/man
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 wmSun displays the current day's Sun Rise and Set Times.
