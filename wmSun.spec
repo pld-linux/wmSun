@@ -14,6 +14,7 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define 	_prefix		/usr/X11R6
 %define 	_mandir 	%{_prefix}/man
+%define		_applnkdir	%{_datadir}/applnk
 
 %description
 wmSun displays the current day's Sun Rise and Set Times.
@@ -36,12 +37,12 @@ make -C %{name} \
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1} \
-        $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
+        $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}/%{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
 	BUGS TODO
@@ -54,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc {BUGS,TODO}.gz
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
-/usr/X11R6/share/applnk/DockApplets/wmSun.desktop
+%{_applnkdir}/DockApplets/wmSun.desktop
