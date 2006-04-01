@@ -3,7 +3,7 @@ Summary(pl):	wmSun wy¶wietla aktualny czas wschodu i zachodu S³oñca
 Name:		wmSun
 Version:	1.03
 Release:	6
-License:	GPL
+License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://nis-www.lanl.gov/~mgh/WindowMaker/%{name}-%{version}.tar.gz
 # Source0-md5:	defc6747ebdb64b5d3afe91f916d3acc
@@ -27,6 +27,7 @@ miejsca, w którym przebywamy.
 %build
 %{__make} -C %{name} clean
 %{__make} -C %{name} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -Wall" \
 	LIBDIR="-L/usr/X11R6/%{_lib}"
 
