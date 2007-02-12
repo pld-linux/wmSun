@@ -1,5 +1,5 @@
 Summary:	wmSun displays the current day's Sun Rise and Set Times
-Summary(pl):	wmSun wy¶wietla aktualny czas wschodu i zachodu S³oñca
+Summary(pl.UTF-8):   wmSun wyÅ›wietla aktualny czas wschodu i zachodu SÅ‚oÅ„ca
 Name:		wmSun
 Version:	1.03
 Release:	7
@@ -17,10 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wmSun displays the current day's Sun Rise and Set Times. You must
 enter your LAtitude and Longitude correctly for it to work.
 
-%description -l pl
-wmSun wy¶wietla aktualne godziny wschodu i zachodu S³oñca. Aby program
-dzia³a³ poprawnie trzeba podaæ d³ugo¶æ i szeroko¶æ geograficzn± dla
-miejsca, w którym przebywamy.
+%description -l pl.UTF-8
+wmSun wyÅ›wietla aktualne godziny wschodu i zachodu SÅ‚oÅ„ca. Aby program
+dziaÅ‚aÅ‚ poprawnie trzeba podaÄ‡ dÅ‚ugoÅ›Ä‡ i szerokoÅ›Ä‡ geograficznÄ… dla
+miejsca, w ktÃ³rym przebywamy.
 
 %prep
 %setup -q
