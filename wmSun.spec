@@ -2,7 +2,7 @@ Summary:	wmSun displays the current day's Sun Rise and Set Times
 Summary(pl.UTF-8):	wmSun wyświetla aktualny czas wschodu i zachodu Słońca
 Name:		wmSun
 Version:	1.03
-Release:	7
+Release:	8
 License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://nis-www.lanl.gov/~mgh/WindowMaker/%{name}-%{version}.tar.gz
